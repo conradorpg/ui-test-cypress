@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/conradorpg/ui-test-cypress#readme",
   "devDependencies": {
+    "@faker-js/faker": "^6.1.2",
     "cypress": "^9.5.4"
   }
 }
