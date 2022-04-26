@@ -3,7 +3,7 @@ const {faker} = require('@faker-js/faker')
 
 describe('Realizar registro do usuário', () => {
   beforeEach(() => {
-    cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+    cy.visit('/minha-conta')
   })
   
   
