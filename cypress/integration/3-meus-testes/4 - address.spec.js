@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+import EnderecoPage from '../../support/pages/address.page'
 
 describe('Funcionalidade Endereço de Entrega', () => {
   beforeEach(() => {
@@ -9,6 +10,6 @@ describe('Funcionalidade Endereço de Entrega', () => {
   })
 
   it('Cadastro com sucesso', () => {
-    // cadastro de endereço de entrega
+    EnderecoPage.editarEnderecoFaturamento('Dani', 'Lua', 'Terra', 'Brasil', 'Rua das Flores', '303', 'Itajubá', 'Minas Gerais', '37500000', '35999887766', 'dani@mail.net')
   })
 })
