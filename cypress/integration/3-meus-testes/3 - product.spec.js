@@ -28,4 +28,16 @@ describe('Funcionalidade página de produtos', () => {
     cy.get('.woocommerce-message').should('contain', quantidade + ' × “Argus All-Weather Tank” foram adicionados no seu carrinho.')
   })
 
+  it.only('Adicionar produto ao carrinho com comando customizado', () => {
+    let produto = 'Aether Gym Pant'
+    let tamanho = '33'
+    let cor = 'Green'
+    let quantidade = 2
+    
+    cy.product(produto, cor, tamanho, quantidade)
+
+    cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
+    cy.get('.woocommerce-message').should('contain', quantidade + ' × “Aether Gym Pant” foram adicionados no seu carrinho.')
+  })
+
 })

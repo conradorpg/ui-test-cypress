@@ -28,5 +28,16 @@ describe('Realizar registro do usuário', () => {
     cy.screenshot()  
   })
 
+  it('Registrar usuário usando comandos personalizados', () => {
+    let nome = faker.name.firstName()
+    let sobrenome = faker.name.lastName()
+    let email = faker.internet.email(nome)
+    cy.register(email, 'test@123', nome, sobrenome)
+
+    cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso')
+    cy.get('.woocommerce-MyAccount-navigation-link--customer-logout > a').should('contain', 'Sair')
+    cy.screenshot()
+  })
+
 })
 
