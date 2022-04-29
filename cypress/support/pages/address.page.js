@@ -1,17 +1,5 @@
 class EnderecoPage {
   editarEnderecoFaturamento(nome, sobrenome, empresa, uf, endereco, numero, cidade, estado, cep, telefone, email) {
-    // let nome = 'Maria'
-    // let sobrenome = 'Da Silva'
-    // let empresa = 'EBAC'
-    // let uf = 'Mongólia'
-    // let endereco = 'Av. São João'
-    // let numero = '405'
-    // let cep = '01001000'
-    // let telefone  = '11999887766'
-    // let email = 'maria@mail.net'
-    // let cidade = 'São Paulo'
-    // let estado = 'São Paulo'
-
     cy.get('.woocommerce-MyAccount-navigation-link--edit-address > a').click()
     cy.get(':nth-child(1) > .title > .edit').click()
 

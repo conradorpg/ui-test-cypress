@@ -1,0 +1,41 @@
+[
+  {
+    "nome": "Fernanda",
+    "sobrenome": "Alves",
+    "empresa": "Facebook",
+    "uf": "Brasil",
+    "endereco": "Rua das Flores",
+    "numero": "303",
+    "cep": "37500000",
+    "telefone": "35999887766",
+    "email": "fer_alves@mail.net",
+    "cidade": "Itajubá",
+    "estado": "Minas Gerais"
+  },
+  {
+    "nome": "Márcia",
+    "sobrenome": "Santos",
+    "empresa": "Embraer",
+    "uf": "Brasil",
+    "endereco": "Rua das Camélias",
+    "numero": "505",
+    "cep": "37500000",
+    "telefone": "35999445522",
+    "email": "marcia_santos@mail.net",
+    "cidade": "Itajubá",
+    "estado": "Minas Gerais"
+  },
+  {
+    "nome": "Antonia",
+    "sobrenome": "Dias",
+    "empresa": "Gerdau",
+    "uf": "Brasil",
+    "endereco": "Rua do Progresso",
+    "numero": "1010",
+    "cep": "37500000",
+    "telefone": "35999443399",
+    "email": "antonia.dias@mail.net",
+    "cidade": "Itajubá",
+    "estado": "Minas Gerais"
+  }
+]
