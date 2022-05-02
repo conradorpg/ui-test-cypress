@@ -17,7 +17,7 @@ class EnderecoPage {
     cy.get('#billing_postcode').clear().type(cep)
     cy.get('#billing_phone').clear().type(telefone)
     cy.get('#billing_email').clear().type(email)
-    cy.get('.button').click()
+    cy.contains('Salvar endereços').click()
 
     cy.contains('Endereço alterado com sucesso.')
     cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.')
